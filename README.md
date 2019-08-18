@@ -28,9 +28,9 @@ yarn pro
 ````
 
 ## 目录介绍
-build 目录存放 webpack配置和本地服务器代码，时服务器路由中的代码单独写出来形成一个router.js文件，方便扩展路由，utils.js文件是一些跟构建weboack和devServer的公共代码。
-src 这个是项目开发目录
-doc 是项目文档目录，里面编写自己的md文档，比如接口文档(interface.md)和项目自述文档(readme.md),在运行 yanr dev 之后可以通过本地地址 http://127.0.0.1:6689/md/interface 访问文档，最后一个是文档名称，不包含扩展名.md，devServer会自动根据名称找到doc目录下的文档然后转成html输出给前台。为了好看引入了第三方样式。
+- build 目录存放 webpack配置和本地服务器代码，时服务器路由中的代码单独写出来形成一个router.js文件，方便扩展路由，utils.js文件是一些跟构建weboack和devServer的公共代码。
+- src 这个是项目开发目录
+- doc 是项目文档目录，里面编写自己的md文档，比如接口文档(interface.md)和项目自述文档(readme.md),在运行 yanr dev 之后可以通过本地地址 http://127.0.0.1:6689/md/interface 访问文档，最后一个是文档名称，不包含扩展名.md，devServer会自动根据名称找到doc目录下的文档然后转成html输出给前台。为了好看引入了第三方样式。
 ##### package.json 文件中添加了几个节点
 节点名称|作用
 ---|---:
