@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 全局设置所有target属性的为_blank，markdown语法对生产的a链接不支持target属性，只支持title属性 -->
+    <base target="_blank" />
+    <title><%= title %></title>
+    <!-- 使用第三方markdown皮肤，稍微美化一点效果 -->
+    <link href="https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.css" rel="stylesheet">
+</head>
+<body class="markdown-body">
+  <%- content %>
+</body>
+</html>

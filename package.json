@@ -1,0 +1,75 @@
+{
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node ./build/devServer-koa.js",
+    "test": "cross-env NODE_ENV=test webpack -p --colors --config ./build/webpack.config.js",
+    "pro": "cross-env NODE_ENV=production webpack -p --colors --config ./build/webpack.config.js"
+  },
+  "devServer": {
+    "host": "127.0.0.1",
+    "port": 6689
+  },
+  "project": {
+    "name": "webpack 构建 react + antd-mobile 开发环境"
+  },
+  "devEnvConfig": {
+    "publicPath": "http://whl.natapp1.cc/"
+  },
+  "testEnvConfig": {
+    "publicPath": "http://localhost:9555/wx-test/"
+  },
+  "proEnvConfig": {
+    "publicPath": "http://localhost:9555/wx-test/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "colors": "^1.3.3",
+    "compression-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "ejs": "^2.6.2",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.1",
+    "koa-convert": "^1.2.0",
+    "koa-gzip": "^0.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "koa-webpack-dev-middleware": "^2.0.2",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "markdown-it": "^9.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "portfinder": "^1.0.21",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "antd-mobile": "^2.3.1",
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1"
+  }
+}
